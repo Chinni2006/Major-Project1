@@ -1,0 +1,21 @@
+{
+  "name": "skillgenome-ledger",
+  "version": "1.0.0",
+  "description": "SkillGenome Ledger — AI Skill DNA + Blockchain Verification",
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "chain": "npx hardhat node",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "test:contracts": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "dev": "echo 'Start backend and frontend in separate terminals: npm run backend  |  npm run frontend'"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.4"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
